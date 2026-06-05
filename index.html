@@ -583,6 +583,11 @@ body { font-family:var(--sans); background:var(--bg); color:var(--ink); overflow
   .team-card { grid-template-columns:1fr }
   .team-card-img-wrap { max-height:300px }
 }
+@media(max-width:700px){
+  .founder-img-col { min-height:240px }
+  .founder-content { padding:2rem }
+  .founder-bio { font-size:.95rem; overflow-wrap:break-word }
+}
 @media(max-width:768px){
   .founder-stat-row { gap:2rem }
 }
