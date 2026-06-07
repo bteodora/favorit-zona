@@ -461,7 +461,7 @@ body { font-family:var(--sans); background:var(--bg); color:var(--ink); overflow
 .founder-hero {
   display:grid; grid-template-columns:1fr 1.1fr; gap:0;
   background:var(--ink); margin-bottom:4rem; position:relative;
-  overflow:hidden;
+  overflow:hidden; min-width:0;
 }
 .founder-hero::before {
   content:'';
@@ -491,6 +491,7 @@ body { font-family:var(--sans); background:var(--bg); color:var(--ink); overflow
   padding:4.5rem 4rem 4.5rem 3rem;
   display:flex; flex-direction:column; justify-content:center;
   position:relative; z-index:1;
+  min-width:0; overflow-wrap:break-word; word-break:break-word;
 }
 .founder-eyebrow {
   font-size:.6rem; letter-spacing:.26em; text-transform:uppercase;
@@ -516,7 +517,7 @@ body { font-family:var(--sans); background:var(--bg); color:var(--ink); overflow
 }
 .founder-bio {
   font-size:.9rem; color:rgba(254,252,249,.55); line-height:1.85; font-weight:300;
-  margin-bottom:2.5rem;
+  margin-bottom:2.5rem; overflow-wrap:break-word; word-break:break-word;
 }
 .founder-specialties {
   display:flex; flex-wrap:wrap; gap:.45rem; margin-bottom:2rem;
@@ -810,6 +811,9 @@ footer {
   .sp-lg{grid-row:auto}
   .numbers-grid{grid-template-columns:1fr 1fr}
   .hero-scroll{display:none}
+  .nav-book{display:none}
+  .hamburger{display:flex}
+  .nav{padding:0 1.5rem}
 }
 </style>
 </head>
